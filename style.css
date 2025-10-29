@@ -1,0 +1,253 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BASE STYLING === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #222;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* === SECTIONS === */
+section {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+/* === HEADINGS === */
+h1, h2, h3 {
+  color: #4b0082; /* Indigo */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* === HERO SECTION === */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+  color: #fff;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #fffafc;
+  max-width: 600px;
+}
+
+/* === ABOUT SECTION === */
+#about {
+  background-color: #fff;
+  border-top: 3px solid #e6e6e6;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* === RESUME SECTION === */
+#resume {
+  background: #fef6ff;
+}
+
+#resume ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#resume li {
+  background: #fff;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(75, 0, 130, 0.1);
+  color: #333;
+}
+
+/* === PROJECTS SECTION === */
+#projects {
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: #222;
+}
+
+.project {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === CONTACT SECTION === */
+#contact {
+  background: #fff;
+}
+
+#contact ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#contact a {
+  color: #4b0082;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  color: #7a3cff;
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+
+  .project {
+    padding: 20px;
+  }
+}
+
+.project a {
+  color: #4b0082;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #7a3cff;
+  text-decoration: underline;
+}
+
+
+/* PROJECTS */
+
+.project-details {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6b21a8;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6b21a8;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #9333ea;
+}
+
+.projects {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #fef6ff, #e8e7ff);
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item h3 {
+  color: #6b21a8;
+  font-size: 1.5rem;
+}
+
+.click-me {
+  font-size: 1rem;
+  color: #7c3aed;
+  margin-left: 10px;
+  text-decoration: none;
+  background-color: #f3e8ff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.click-me:hover {
+  background-color: #7c3aed;
+  color: white;
+  transform: scale(1.1);
+}
